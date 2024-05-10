@@ -1,0 +1,15 @@
+{
+  "name": "hosting-node-js",
+  "version": "1.0.0",
+  "description": "learn how to connect node application with mongo server and host it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hitesh Jangir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4"
+  }
+}
