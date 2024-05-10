@@ -3,12 +3,14 @@ const app = express();
 const db = require('./dataBase');
 const person = require('./models/person');
 const personRoute = require('./routes/personroute');
+const { config } = require('dotenv');
+require('dotenv').config();
 app.use(express.json());
-
+const PORT = process.env.PORT;
 
 
 
 app.use('/person',personRoute);
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Server is listen on port-3000");
 })
