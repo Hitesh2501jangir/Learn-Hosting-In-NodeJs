@@ -10,7 +10,7 @@ const localMiddleWare = passport.authenticate('local',{session:false});
 
 
 app.use('/person',personRoute);
-app.get('/',localMiddleWare,(req,res)=>{
+app.get('/',localMiddleWare ,(req,res)=>{
     res.send("Hello Its working");
 })
 app.listen(3000,()=>{
