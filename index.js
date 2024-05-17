@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const db = require('./database');
-const personRoute = require('./routes/signupData');
+const personRoute = require('./routes/PersonRoute');
 app.use(express.json());
 const passport = require('./auth');
 app.use(passport.initialize());
